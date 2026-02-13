@@ -39,11 +39,6 @@ h1 {
     overflow: hidden;
 }
 
-.item img {
-    width: 100%;
-    display: block;
-}
-
 .overlay {
     position: absolute;
     top: 0;
@@ -70,13 +65,13 @@ h1 {
 
 @media (max-width: 900px) {
     .gallery {
-        column-count: 2;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 600px) {
     .gallery {
-        column-count: 1;
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -89,8 +84,10 @@ h1 {
 <div class="gallery">
 
 <div class="item">
-  <img src="Dream of the Red Chamber.png">
-  <div class="title">Dream of the Red Chamber</div>
+  < img src="Dream of the Red Chamber.png">
+  <div class="overlay">
+    <div class="text">Dream of the Red Chamber</div>
+  </div>
 </div>
 
 <div class="item">
