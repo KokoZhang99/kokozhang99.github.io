@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Koko Zhang</title>
+<style>
+
+body {
+    margin: 40px;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: white;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+.gallery {
+    column-count: 3;
+    column-gap: 20px;
+}
+
+.nav {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav a {
+    margin-right: 25px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.nav-left a {
+    margin-right: 25px;
+}
+
+.nav-right a {
+    margin-left: 25px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 220px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 10px 0;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-content a:hover {
+    background-color: #f2f2f2;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+    
+.item {
+    position: relative;
+    margin-bottom: 20px;
+    break-inside: avoid;
+}
+
+.item img {
+    width: 100%;
+    display: block;
+}
+
+.item {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.item:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 900px) {
+    .gallery {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery {
+        column-count: 1;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<h1>Festival</h1>
+
+<p>
+This series explores...
+</p >
+
+<div class="gallery">
+    <div class="item">
+        < img src="festival1.jpg">
+    </div>
+    <div class="item">
+        < img src="festival2.jpg">
+    </div>
+  <div class="item">
+        < img src="festival3.jpg">
+    </div>
+  <div class="item">
+        < img src="festival4.jpg">
+    </div>
+  <div class="item">
+        < img src="festival5.jpg">
+    </div>
+  <div class="item">
+        < img src="festival6.jpg">
+    </div>
+  <div class="item">
+        < img src="festival7.png">
+    </div>
+  <div class="item">
+        < img src="festival8.jpg">
+    </div>
+  <div class="item">
+        < img src="festival9.jpg">
+    </div>
+</div>
+
+</div>
+
+</body>
+</html>
