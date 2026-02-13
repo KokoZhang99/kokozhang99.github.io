@@ -18,9 +18,8 @@ h1 {
 }
 
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    column-count: 3;
+    column-gap: 20px;
 }
 
 .item {
@@ -65,7 +64,7 @@ h1 {
 
 @media (max-width: 900px) {
     .gallery {
-        grid-template-columns: repeat(2, 1fr);
+        column-count: 2;
     }
 }
 
